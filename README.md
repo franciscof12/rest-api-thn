@@ -13,7 +13,7 @@
 
 ## Project Structure
 ```
-/rest-api_thn
+/rest-api-thn
 |-- /cmd
 |   `-- /api
 |       `-- main.go

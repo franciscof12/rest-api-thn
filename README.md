@@ -11,9 +11,6 @@
     <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/franciscof12/rest-api-thn">
 </p>
 
-# THN REST API with simple audit features
-[![Go Report Card](https://goreportcard.com/badge/github.com/franciscof12/rest-api-thn)](https://goreportcard.com/report/github.com/franciscof12/rest-api-thn)
-
 ## Project Structure
 ```
 /rest-api_thn

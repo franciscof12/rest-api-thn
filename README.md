@@ -1,6 +1,7 @@
 
 # THN REST API with simple audit features
-[![Go Report Card](https://goreportcard.com/badge/franciscof12/rest-api-thn)](https://goreportcard.com/report/franciscof12/rest-api-thn)
+[![Go Report Card](https://goreportcard.com/badge/github.com/franciscof12/rest-api-thn)](https://goreportcard.com/report/github.com/franciscof12/rest-api-thn)
+
 ## Project Structure
 ```
 /rest-api_thn

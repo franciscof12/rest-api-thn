@@ -3,7 +3,7 @@
 [![Go Report Card](https://goreportcard.com/badge/franciscof12/rest-api-thn)](https://goreportcard.com/report/franciscof12/rest-api-thn)
 ## Project Structure
 ```
-/thn-rest-api
+/rest-api_thn
 |-- /cmd
 |   `-- /api
 |       `-- main.go

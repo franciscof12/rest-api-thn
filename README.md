@@ -1,3 +1,15 @@
+<p align="center" >
+    <img src="assets/logo.png" alt="logo" width="250"/>
+<h3 align="center">THN REST API</h3>
+<p align="center">Easy CLI with useful terraform/terragrunt tools</p>
+<p align="center">Build with ❤ in Golang</p>
+</p>
+
+<p align="center" >
+    <img alt="Go report card" src="https://goreportcard.com/badge/github.com/franciscof12/rest-api-thn">
+    <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/franciscof12/rest-api-thn">
+    <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/franciscof12/rest-api-thn">
+</p>
 
 # THN REST API with simple audit features
 [![Go Report Card](https://goreportcard.com/badge/github.com/franciscof12/rest-api-thn)](https://goreportcard.com/report/github.com/franciscof12/rest-api-thn)

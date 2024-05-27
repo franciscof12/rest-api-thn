@@ -1,7 +1,7 @@
 <p align="center" >
-    <img src="assets/logo.png" alt="logo" width="250"/>
+    <img src="[assets/logo.png](https://storage.googleapis.com/gopherizeme.appspot.com/gophers/1e5bdb9a40326f275582821d1e01ac365d24498f.png)" alt="logo" width="250"/>
 <h3 align="center">THN REST API</h3>
-<p align="center">Easy CLI with useful terraform/terragrunt tools</p>
+<p align="center">REST API with simple audit features</p>
 <p align="center">Build with ❤ in Golang</p>
 </p>
 

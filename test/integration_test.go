@@ -2,11 +2,10 @@ package tests
 
 import (
 	"encoding/json"
+	"github.com/franciscof12/rest-api-thn/internal/handlers"
 	"net/http"
 	"net/http/httptest"
 	"testing"
-
-	"github.com/franciscof12/thn-rest-api/internal/handlers"
 )
 
 func TestFeatureAndMetricsIntegration(t *testing.T) {

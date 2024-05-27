@@ -2,11 +2,10 @@ package handlers
 
 import (
 	"encoding/json"
+	"github.com/franciscof12/rest-api-thn/internal/models"
 	"net/http"
 	"net/http/httptest"
 	"testing"
-
-	"github.com/franciscof12/thn-rest-api/internal/models"
 )
 
 func TestMetricsHandler(t *testing.T) {

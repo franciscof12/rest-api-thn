@@ -1,12 +1,11 @@
 package handlers
 
 import (
+	"github.com/franciscof12/rest-api-thn/internal/models"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 	"time"
-
-	"github.com/franciscof12/thn-rest-api/internal/models"
 )
 
 func TestFeatureHandler(t *testing.T) {

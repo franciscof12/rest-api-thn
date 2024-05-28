@@ -15,7 +15,7 @@ func TestFeatureAndMetricsIntegration(t *testing.T) {
 		if err != nil {
 			t.Fatal("Error creating request for /feature:", err)
 		}
-		reqFeature.RemoteAddr = ip + ":12345" // Simula la IP del remitente
+		reqFeature.RemoteAddr = ip + ":12345"
 		rrFeature := httptest.NewRecorder()
 		featureHandler := http.HandlerFunc(handlers.FeatureHandler)
 		featureHandler.ServeHTTP(rrFeature, reqFeature)

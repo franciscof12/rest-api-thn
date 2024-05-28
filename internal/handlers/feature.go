@@ -5,6 +5,7 @@ import (
 	"github.com/franciscof12/rest-api-thn/pkg/common"
 	"log/slog"
 	"net/http"
+	"os"
 	"sync"
 	"time"
 )
@@ -25,15 +26,8 @@ func FeatureHandler(w http.ResponseWriter, r *http.Request) {
 	mutex.Lock()
 	defer mutex.Unlock()
 	RequestInfo = append(RequestInfo, request)
-
-	slog.Info("Request saved",
-		"RemoteAddress", request.RemoteAddr,
-		"RealIP", request.RealIP,
-		"Time", request.Time,
-		"Method", request.Method,
-		"Path", request.Path,
-		"Headers", common.FormatHeaders(request.Headers),
-	)
+	logger := slog.New(slog.NewJSONHandler(os.Stdout, nil))
+	logger.Info("Request saved", "RemoteAddress", request.RemoteAddr, "RealIP", request.RealIP, "Time", request.Time, "Method", request.Method, "Path", request.Path, "Headers", common.FormatHeaders(request.Headers))
 }
 
 func createRequestInfo(r *http.Request) models.RequestInfo {

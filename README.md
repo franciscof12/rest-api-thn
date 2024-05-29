@@ -42,14 +42,27 @@
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/franciscof12/simple-thn-api
-cd thn-rest-api
+git clone https://github.com/franciscof12/rest-api-thn
+cd rest-api-thn
 ```
 
 2. Install dependencies:
 
 ```bash
 make deps
+```
+
+3. Create a .env file with the following content:
+
+```bash
+MONGODB_URI=""
+DATABASE_NAME=""
+COLLECTION_NAME=""
+```
+
+4. Build & Run the docker image:
+```bash
+make docker-build docker-run
 ```
 
 ## Usage

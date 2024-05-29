@@ -33,3 +33,11 @@ test-unit:
 test-integration:
 	@echo -e "$(GREEN)Ejecutando pruebas de integración...$(NC)"
 	@go test $(PKG) -run Integration -v
+
+docker-build:
+	@echo -e "$(GREEN)Construyendo imagen Docker...$(NC)"
+	@docker build -t $(APP_NAME) .
+
+docker-run:
+	@echo -e "$(GREEN)Ejecutando contenedor Docker...$(NC)"
+	@docker run -p 8080:8080 $(APP_NAME)

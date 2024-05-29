@@ -1,8 +1,11 @@
 package common
 
 import (
+	"github.com/joho/godotenv"
+	"log/slog"
 	"net"
 	"net/http"
+	"os"
 	"strings"
 )
 
@@ -30,4 +33,12 @@ func FormatHeaders(headers http.Header) string {
 		formattedHeaders += key + ": " + values[0] + "; "
 	}
 	return formattedHeaders
+}
+
+func LoadEnvironment() {
+	err := godotenv.Load()
+	if err != nil {
+		slog.Error("Error loading .env file", "error", err.Error())
+		os.Exit(1) // Terminate if env cannot be loaded
+	}
 }

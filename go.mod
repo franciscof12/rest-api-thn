@@ -1,11 +1,10 @@
 module github.com/franciscof12/rest-api-thn
 
-go 1.22.1
-
-require github.com/franciscof12/thn-rest-api v0.0.0-20240527184025-98305acc7d67
+go 1.22.3
 
 require (
 	github.com/golang/snappy v0.0.1 // indirect
+	github.com/joho/godotenv v1.5.1 // indirect
 	github.com/klauspost/compress v1.13.6 // indirect
 	github.com/montanaflynn/stats v0.0.0-20171201202039-1bf9dbcd8cbe // indirect
 	github.com/xdg-go/pbkdf2 v1.0.0 // indirect

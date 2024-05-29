@@ -23,9 +23,10 @@ func FeatureHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	request := createRequestInfo(r)
-	mutex.Lock()
-	defer mutex.Unlock()
-	RequestInfo = append(RequestInfo, request)
+	_, err = models.ResquestCollection.InsertOne(r.Context(), request)
+	if err != nil {
+		slog.Error("Error saving request info:", "error", err.Error())
+	}
 	logger := slog.New(slog.NewJSONHandler(os.Stdout, nil))
 	logger.Info("Request saved", "RemoteAddress", request.RemoteAddr, "RealIP", request.RealIP, "Time", request.Time, "Method", request.Method, "Path", request.Path, "Headers", common.FormatHeaders(request.Headers))
 }
